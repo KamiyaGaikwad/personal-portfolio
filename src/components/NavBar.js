@@ -34,6 +34,13 @@ export const NavBar = () => {
     setActiveLink(value);
   }
 
+  const scrollToFooter = () => {
+    // Scroll to the element with the id "footer"
+    const footerElement = document.getElementById('footer');
+    if (footerElement) {
+      footerElement.scrollIntoView({ behavior: 'smooth' });
+    }}
+
   return (
     // <Router>
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
@@ -57,7 +64,7 @@ export const NavBar = () => {
                 <a href="https://github.com/KamiyaGaikwad/"><FontAwesomeIcon icon={faGithub} className="github-icon"/></a>
               </div>
               {/* <HashLink to='#connect'> */}
-                <button className="vvd"><span>Let's Connect</span></button>
+                <button className="vvd" onClick={scrollToFooter}><span>Let's Connect</span></button>
               {/* </HashLink> */}
             </span>
           </Navbar.Collapse>
