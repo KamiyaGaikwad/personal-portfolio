@@ -7,17 +7,17 @@ export const projects =[
       "description": "ChibiKart is an e-commerce application built with ReactJS as the frontend framework and utilizes the backend of the Mockbee API. It is a web app that sells anime merchandise, including stickers, oversized t-shirts, and figurines.",
       "demoLink": "https://chibikart.vercel.app/",
       "codeLink": "https://github.com/KamiyaGaikwad/ChibiKart",
-      "image": "src/assets/img/chibikart.png"
+      "image": "https://raw.githubusercontent.com/KamiyaGaikwad/personal-portfolio//master/src/assets/img/chibikart.png"
     },
     {
-      "id": 2,
-      "projectTitle": "Another Project",
-      "languages": ["Python", "Django", "JavaScript"],
-      "wakatimeSvgLink": "https://wakatime.com/badge/user/your-user-id/project/another-project-id.svg",
-      "description": "Another project description.",
-      "demoLink": "https://another-demo.example.com",
-      "codeLink": "https://github.com/your-username/another-repo",
-      "image": "https://example.com/another-image.jpg"
+      "id": 14,
+      "projectTitle": "KMail",
+      "languages": ["React", "JavaScript", "HTML", "CSS"],
+      "wakatimeSvgLink": "https://wakatime.com/badge/user/96974b03-e435-4d4d-89a2-486553721b5a/project/7591f6b2-ae0b-40bf-8b4c-7bf5f201f454.svg",
+      "description": "KMail is a mail application built with React that emulates the functionality of Gmail.",
+      "demoLink": "https://kmail.netlify.app/",
+      "codeLink": "https://github.com/KamiyaGaikwad/kmail",
+      "image": "https://raw.githubusercontent.com/KamiyaGaikwad/personal-portfolio//master/src/assets/img/kmail.png"
     }
   ]
   
