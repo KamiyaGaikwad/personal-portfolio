@@ -35,10 +35,10 @@ export const ProjectCard = ({id,projectTitle, languages, wakatimeSvgLink, descri
             </div> */}
             <p className={orderClass}>{description}</p>
             <div className={`project-buttons ${orderClass}`}>
-              <Button variant="outline-light" size="lg" href={demoLink}>
+              <Button variant="outline-light" size="lg" href={demoLink} target="_blank">
                Demo
               </Button>
-              <Button variant="outline-light" size="lg" href={codeLink}>
+              <Button variant="outline-light" size="lg" href={codeLink} target="_blank">
                 Code
               </Button>
             </div>

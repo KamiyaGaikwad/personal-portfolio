@@ -67,7 +67,7 @@ export const projects =[
       "description": "A web application in Vanilla JS to see if the user's birthday is lucky.",
       "demoLink": "https://lucky-birthday-kamiya.netlify.app/",
       "codeLink": "https://github.com/KamiyaGaikwad/Lucky_Birthday",
-      "image": "https://raw.githubusercontent.com/KamiyaGaikwad/personal-portfolio//master/src/assets/img/fun-with-triangles.png"
+      "image": "https://raw.githubusercontent.com/KamiyaGaikwad/personal-portfolio//master/src/assets/img/lucky-birthday.png"
     },
     {
       "id": 8,

@@ -1,5 +1,4 @@
 import React from "react";
-import cat1 from "../assets/img/cat-kitten-pixel-art-pixels.png";
 import pic from "../assets/img/Kamiya.jpg";
 
 export const Home = () => {
