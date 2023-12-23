@@ -18,6 +18,16 @@ export const projects =[
       "demoLink": "https://kmail.netlify.app/",
       "codeLink": "https://github.com/KamiyaGaikwad/kmail",
       "image": "https://raw.githubusercontent.com/KamiyaGaikwad/personal-portfolio//master/src/assets/img/kmail.png"
+    },
+    {
+      "id": 13,
+      "projectTitle": "Infusify",
+      "languages": ["HTML", "CSS","JavaScript"],
+      "wakatimeSvgLink": "https://wakatime.com/badge/user/96974b03-e435-4d4d-89a2-486553721b5a/project/e6e649bb-ef32-4163-a17f-12de2b661864.svg",
+      "description": "Infusify is a CSS Component library created purely based on HTML and CSS.",
+      "demoLink": "https://infusify.netlify.app/",
+      "codeLink": "https://github.com/KamiyaGaikwad/Infusify",
+      "image": "https://github.com/KamiyaGaikwad/Infusify/raw/temp_dev/Images/infusify.PNG"
     }
   ]
   
