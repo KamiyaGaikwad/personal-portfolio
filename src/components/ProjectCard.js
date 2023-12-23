@@ -27,12 +27,12 @@ export const ProjectCard = ({id,projectTitle, languages, wakatimeSvgLink, descri
             <div className={badgesClass}>
               {languages.map((lang)=><Pill lang={lang} />)}
             </div>
-            <div className="wakatime">
+            {/* <div className="wakatime">
               <img
                 src={wakatimeSvgLink}
                 alt="wakatime"
               />
-            </div>
+            </div> */}
             <p className={orderClass}>{description}</p>
             <div className={`project-buttons ${orderClass}`}>
               <Button variant="outline-light" size="lg" href={demoLink}>
