@@ -40,7 +40,6 @@ export const NavBar = () => {
     if (footerElement) {
       footerElement.scrollIntoView({ behavior: 'smooth' });
     }}
-
   return (
     // <Router>
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
@@ -60,9 +59,9 @@ export const NavBar = () => {
             </Nav>
             <span className="navbar-text d-flex flex-column flex-md-row">
               <div className="social-icon d-flex mt-2 mb-3 mb-md-0 mt-md-0">
-                <a href="https://www.linkedin.com/in/kamiya-gaikwad/"><img src={navIcon1} alt="linkedin" /></a>
-                <a href="mailto:kamitarg88@gmail.com"><FontAwesomeIcon icon={faEnvelope} className="gmail-icon"/></a>
-                <a href="https://github.com/KamiyaGaikwad/"><FontAwesomeIcon icon={faGithub} className="github-icon"/></a>
+                <a href="https://www.linkedin.com/in/kamiya-gaikwad/" target="_blank"><img src={navIcon1} alt="linkedin" /></a>
+                <a href="mailto:kamitarg88@gmail.com" target="_blank"><FontAwesomeIcon icon={faEnvelope} className="gmail-icon"/></a>
+                <a href="https://github.com/KamiyaGaikwad/" target="_blank"><FontAwesomeIcon icon={faGithub} className="github-icon"/></a>
               </div>
               {/* <HashLink to='#connect'> */}
                 <button className="vvd" onClick={scrollToFooter}><span>Let's Connect</span></button>

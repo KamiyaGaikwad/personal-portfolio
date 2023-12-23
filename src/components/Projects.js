@@ -5,7 +5,7 @@ import { projects } from "../assets/data";
 
 export const Projects = () => {
   return (
-    <div className="projects">
+    <div className="projects" id="projects">
       <div className="heading">
         <div className="image">
           <img src={cat1} alt="cat" />

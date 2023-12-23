@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <VerticalNavBar />
+      {/* <VerticalNavBar /> */}
       <Home />
       <About />
       <Projects />

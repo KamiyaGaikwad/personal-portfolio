@@ -6,10 +6,10 @@ import { faHtml5,faCss3Alt,faReact, faJs, faBootstrap } from '@fortawesome/free-
 
 export const About = () => {
     return(
-        <div className="about">
+        <div className="about" id="skills">
         <div className="heading">
         <div className="image"><img src={cat1} alt="cat"/></div>
-        <h2>About</h2>
+        <h2>Skills</h2>
         </div>
         <div className="about-icons">
         <h1><FontAwesomeIcon icon={faHtml5} style={{color: "#ec5130",}} /></h1>
