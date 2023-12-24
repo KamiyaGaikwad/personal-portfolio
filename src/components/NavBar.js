@@ -13,7 +13,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 export const NavBar = () => {
 
-  const [activeLink, setActiveLink] = useState('home');
+  // const [activeLink, setActiveLink] = useState('home');
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -30,9 +30,9 @@ export const NavBar = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, [])
 
-  const onUpdateActiveLink = (value) => {
-    setActiveLink(value);
-  }
+  // const onUpdateActiveLink = (value) => {
+  //   setActiveLink(value);
+  // }
 
   const scrollToFooter = () => {
     // Scroll to the element with the id "footer"
@@ -53,9 +53,13 @@ export const NavBar = () => {
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
+              {/* <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
               <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
-              <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
+              <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link> */}
+              <Nav.Link href="#home" className='navbar-link'>Home</Nav.Link>
+              <Nav.Link href="#skills" className='navbar-link'>Skills</Nav.Link>
+              <Nav.Link href="#projects" className='navbar-link'>Projects</Nav.Link>
+              <Nav.Link href="#blogs" className='navbar-link'>Blogs</Nav.Link>
             </Nav>
             <span className="navbar-text d-flex flex-column flex-md-row">
               <div className="social-icon d-flex mt-2 mb-3 mb-md-0 mt-md-0">
