@@ -5,8 +5,8 @@ import { projects } from "../assets/data";
 
 export const Projects = () => {
   return (
-    <div className="projects" id="projects">
-      <div className="heading">
+    <div className="projects mb-5" id="projects">
+      <div className="heading mb-3">
         <div className="image">
           <img src={cat1} alt="cat" />
         </div>

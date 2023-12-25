@@ -1,3 +1,7 @@
+:root{
+  --primary:#121212;
+}
+
 /*Custom Fonts*/
 @font-face {
   font-family: Centra;
@@ -30,7 +34,7 @@ body{
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background:#121212 !important;
+  background:var(--primary) !important;
   color:#fff !important;
   font-family: 'Centra',sans-serif !important;
 }
@@ -90,7 +94,7 @@ nav.navbar {
 }
 nav.navbar.scrolled {
   padding: 0px 0;
-  background-color: #121212;
+  background-color: var(--primary);
 }
 nav.navbar a.navbar-brand {
     width: 9%;
@@ -176,7 +180,7 @@ span.navbar-text {
   transition: 0.3s ease-in-out;
 }
 .navbar-text button:hover {
-  color: #121212;
+  color: var(--primary);
 }
 .navbar-text button:hover::before {
 	content: "";
@@ -235,7 +239,7 @@ a svg{
 }
 
 a:hover svg{
-  color:#121212;
+  color:var(--primary);
 }
 
 .gmail-icon{
@@ -250,6 +254,15 @@ a:hover svg{
   width:50%;
   z-index:1;
   transition: 0.3s ease-in-out;
+}
+
+.navbar-collapse{
+  background:var(--primary);
+  border:1px solid;
+}
+
+.navbar .vvd{
+  z-index:1;
 }
 
 /* ::-webkit-scrollbar-thumb {
@@ -372,7 +385,18 @@ a:hover svg{
 .about-icons{
   display: flex;
   justify-content: center;
-  gap:20px;
+  gap:2rem;
+  flex-wrap: wrap;
+  padding:2rem 1rem;
+}
+
+.about-icons .skill{
+  display: flex;
+  flex-direction: column;
+}
+
+.about-icons .icon-img{
+  height:46px;
 }
 
 /* Projects */
@@ -381,7 +405,7 @@ a:hover svg{
   padding: 1rem;
   gap: 20px;
   flex-wrap: wrap;
-  justify-content: center; /* Default alignment for small devices */
+  justify-content: center;
 }
 
 .project-card .project-img {
@@ -411,6 +435,10 @@ a:hover svg{
   background: #2d53e5 !important;
 }
 
+#nodejs-badge {
+  background: #58A149 !important;
+}
+
 .project-card .wakatime img {
   width: 12em;
 }
@@ -422,13 +450,6 @@ a:hover svg{
 .project-buttons .btn {
   font-weight: 600;
 }
-
-/* .project-card h3,
-.project-card div,
-.project-card p {
-  justify-content: center;
-  text-align: center;
-} */
 
 .content-according-to-order-1,.content-according-to-order-2{
   justify-content: center;
@@ -449,6 +470,10 @@ a:hover svg{
 .content-according-to-order-2{
   justify-content: flex-start;
   text-align: left;
+}
+.navbar-collapse{
+  background:none;
+  border:none;
 }
 }
 
@@ -496,45 +521,13 @@ footer span {
 }
 
 footer .resume-icon{
+  width:50%;
+  z-index:1;
+  transition: 0.3s ease-in-out;
   font-size: 1.2rem;
 }
 
 /* App */
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

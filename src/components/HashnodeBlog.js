@@ -64,8 +64,8 @@ export const HashnodeBlog = () => {
     }, []);
   
     return (
-      <div className="projects" id="blogs">
-        <div className="heading">
+      <div className="projects mb-5" id="blogs">
+        <div className="heading mb-3">
         <div className="image">
           <img src={cat1} alt="cat" />
         </div>
