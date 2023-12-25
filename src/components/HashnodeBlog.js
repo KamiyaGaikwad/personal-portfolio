@@ -33,8 +33,6 @@ export const fetchPosts = async () => {
   
     const response = await fetch('https://gql.hashnode.com', options);
     const data = await response.json();
-
-    console.log('API response:', data);
   
     const {
       data: {
