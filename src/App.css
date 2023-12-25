@@ -1,5 +1,22 @@
 :root{
   --primary:#121212;
+  --white:#fff;
+  --background: #282c34;
+  --cyanBlue: #08d9ff;
+  --orange: #ec5130;
+  --yellow: #d1bf49;
+  --blue: #2d53e5;
+  --green: #58a149;
+  /* --gray: #f8f8f8; */
+  --grayDark: #555555;
+  --social-background:rgba(217, 217, 217, 0.1);
+  --social-border:rgba(255, 255, 255, 0.5);
+  --font-white:#f1f1f1;
+  --track-background:#1f1e1e;
+  --home-box1:rgba(248, 248, 248, 0.12);
+  --home-box2:rgba(248, 248, 248, 0.24);
+  --default-green:green;
+  --default-red:red;
 }
 
 /*Custom Fonts*/
@@ -35,7 +52,7 @@ body{
   overflow-x: hidden;
   position: relative;
   background:var(--primary) !important;
-  color:#fff !important;
+  color:var(--white) !important;
   font-family: 'Centra',sans-serif !important;
 }
 h1,h2,h3,h4,h5,h6{
@@ -77,11 +94,11 @@ input:focus, textarea:focus, select:focus {
 }
 
 p.success {
-	color: green;
+	color: var(--default-green);
 }
 
 p.danger {
-	color: red;
+	color: var(--default-red);
 }
 /************ Navbar Css ************/
 nav.navbar {
@@ -101,13 +118,13 @@ nav.navbar a.navbar-brand {
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
-  color: #fff !important;
+  color: var(--white) !important;
   letter-spacing: 0.8px;
   padding: 0 25px;
   font-size: 18px;
   opacity: 0.75;
 }
-.nav-link{color: #fff !important;opacity: 0.75;}
+.nav-link{color: var(--white) !important;opacity: 0.75;}
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
     opacity: 1;
@@ -123,21 +140,21 @@ span.navbar-text {
 .social-icon a {
     width: 42px;
     height: 42px;
-    background: rgba(217, 217, 217, 0.1);
+    background: var(--social-background);
     display: inline-flex;
     border-radius: 50%;
     margin-right: 6px;
     align-items: center;
     justify-content: center;
     line-height: 1;
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    border: 1px solid var(--social-border);
 }
 .social-icon a::before {
     content: "";
     width: 42px;
     height: 42px;
     position: absolute;
-    background-color: #ffffff;
+    background-color: var(--white);
     border-radius: 50%;
     transform: scale(0);
 	transition: 0.3s ease-in-out;
@@ -155,8 +172,8 @@ span.navbar-text {
 }
 .navbar-text button {
   font-weight: 700;
-  color: #fff;
-  border: 1px solid #fff;
+  color: var(--white);
+  border: 1px solid var(--white);
   padding: 18px;
   font-size: 18px;
   margin-left: 18px;
@@ -173,7 +190,7 @@ span.navbar-text {
   width: 0%;
   height: 100%;
   position: absolute;
-  background-color: #fff;
+  background-color: var(--white);
   left: 0;
   top: 0;
   z-index: -1;
@@ -198,19 +215,19 @@ nav.navbar .navbar-toggler-icon {
   height: 17px;
   background-image: none;
   position: relative;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid var(--white);
   transition: all 300ms linear;
   top: -2px;
 }
 nav.navbar .navbar-toggler-icon:focus {
-	border-bottom: 2px solid #fff;
+	border-bottom: 2px solid var(--white);
 }
 nav.navbar .navbar-toggler-icon:after,
 nav.navbar .navbar-toggler-icon:before {
 	width: 24px;
 	position: absolute;
 	height: 2px;
-	background-color: #fff;
+	background-color: var(--white);
 	top: 0;
 	left: 0;
 	content: '';
@@ -222,12 +239,12 @@ nav.navbar .navbar-toggler-icon:after {
 }
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
 	transform: rotate(45deg);
-	background-color: #fff;
+	background-color: var(--white);
 	height: 2px;
 }
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 	transform: translateY(8px) rotate(-45deg);
-	background-color: #fff;
+	background-color: var(--white);
 	height: 2px;
 }
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
@@ -235,7 +252,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 a svg{
-  color:#ffffff;
+  color:var(--white);
 }
 
 a:hover svg{
@@ -265,25 +282,20 @@ a:hover svg{
   z-index:1;
 }
 
-/* ::-webkit-scrollbar-thumb {
-  background-image: url('https://png.pngtree.com/element_our/20190604/ourmid/pngtree-cute-white-cat-image_1476066.jpg'); 
-} */
-
-/* Add this to your CSS file or style section */
+/* Scrollbar */
 ::-webkit-scrollbar {
-  width: 10px; /* Set the width of the scrollbar */
+  width: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #555555; /* Set the background color of the thumb to transparent */
-  border: none; /* Remove the border of the thumb */
-  border-radius: 6px; /* Set the border-radius to half of the width to create a circle */
-  box-shadow: inset 0 0 0 6px 'src\assets\img\cat-kitten-pixel-art-pixels.jpg'; /* Add a box-shadow with your image as a background */
+  background-color: var(--grayDark);
+  border: none; 
+  border-radius: 6px;
+  box-shadow: inset 0 0 0 6px;
 }
 
-/* Optionally, you can style the track as well */
 ::-webkit-scrollbar-track {
-  background-color: #1f1e1e; /* Set the background color of the track */
+  background-color: var(--track-background);
 }
 
 .vertical-nav{
@@ -303,13 +315,13 @@ a:hover svg{
 .circle{
   width:80px;
   height:80px;
-  background:#f1f1f1;
+  background:var(--font-white);
   border-radius: 50%;
   display:flex;
   flex-direction:column;
   align-items: center;
   justify-content: center;
-  color:black;
+  color:var(--primary);
 }
 
 .circle img{
@@ -319,7 +331,7 @@ a:hover svg{
 .line{
   width:1px;
   height:80px;
-  background:#f1f1f1;
+  background:var(--font-white);
 }
 
 /* Home */
@@ -337,7 +349,7 @@ a:hover svg{
 }
 
 .home .image{
-  background:#282c34;
+  background:var(--background);
   width:220px;
   height:220px;
   border-radius: 50%;
@@ -357,7 +369,7 @@ a:hover svg{
 }
 
 .home .content{
-  box-shadow: 0 1px 6px rgba(248, 248, 248, 0.12), 0 1px 4px rgba(248, 248, 248, 0.24);
+  box-shadow: 0 1px 6px var(--home-box1), 0 1px 4px var(--home-box1);
   padding:3.2rem 3rem;
   border-radius: 10px;
   display: flex;
@@ -399,6 +411,10 @@ a:hover svg{
   height:46px;
 }
 
+.about .skill .rb img{
+  width:42px;
+}
+
 /* Projects */
 .project-card {
   display: flex;
@@ -420,23 +436,23 @@ a:hover svg{
 }
 
 #react-badge {
-  background: #08d9ff !important;
+  background: var(--cyanBlue) !important;
 }
 
 #html-badge {
-  background: #ec5130 !important;
+  background: var(--orange) !important;
 }
 
 #javascript-badge {
-  background: #d1bf49 !important;
+  background: var(--yellow) !important;
 }
 
 #css-badge {
-  background: #2d53e5 !important;
+  background: var(--blue) !important;
 }
 
 #nodejs-badge {
-  background: #58A149 !important;
+  background: var(--green) !important;
 }
 
 .project-card .wakatime img {
@@ -458,23 +474,6 @@ a:hover svg{
 
 .project-card .row{
   gap:1.5rem;
-}
-
-/* Center content for lg devices */
-@media (min-width: 992px) {
-.content-according-to-order-1{
-  justify-content: flex-end;
-  text-align: right;
-}
-
-.content-according-to-order-2{
-  justify-content: flex-start;
-  text-align: left;
-}
-.navbar-collapse{
-  background:none;
-  border:none;
-}
 }
 
 /* Footer */
@@ -531,3 +530,20 @@ footer .resume-icon{
 .App {
   text-align: center;
 }
+
+/* Media Query */
+@media (min-width: 992px) {
+  .content-according-to-order-1{
+    justify-content: flex-end;
+    text-align: right;
+  }
+  
+  .content-according-to-order-2{
+    justify-content: flex-start;
+    text-align: left;
+  }
+  .navbar-collapse{
+    background:none;
+    border:none;
+  }
+  }
