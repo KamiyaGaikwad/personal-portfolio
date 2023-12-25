@@ -8,7 +8,7 @@ export const BlogCard = ({data,index,len}) =>{
       return(
           <Container fluid className="project-card" key={len-index}>
           <Row>
-            <Col lg={{ span: 4, order: isEven ? 2 : 1 }} className="d-flex align-items-center">
+            <Col lg={{ span: 4, order: isEven ? 2 : 1 }} className="d-flex align-items-center bradius">
               <img className="project-img" src={data.coverImage.url} alt={data.title} style={{ objectFit: 'cover', objectPosition: 'top', width: '100%', height: '100%', aspectRatio: '10 / 7' }} />
             </Col>
             <Col lg={{ span: 4, order: isEven ? 1 : 2 }} className={`text-lg-left ${orderClass}`}>

@@ -476,6 +476,10 @@ a:hover svg{
   gap:1.5rem;
 }
 
+.bradius img{
+  border-radius: 20px;
+}
+
 /* Footer */
 footer{
   margin-top:3rem;
