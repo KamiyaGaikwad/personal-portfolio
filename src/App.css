@@ -271,11 +271,11 @@ a:hover svg{
 
 /* Add this to your CSS file or style section */
 ::-webkit-scrollbar {
-  width: 0px; /* Set the width of the scrollbar */
+  width: 10px; /* Set the width of the scrollbar */
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: transparent; /* Set the background color of the thumb to transparent */
+  background-color: #555555; /* Set the background color of the thumb to transparent */
   border: none; /* Remove the border of the thumb */
   border-radius: 6px; /* Set the border-radius to half of the width to create a circle */
   box-shadow: inset 0 0 0 6px 'src\assets\img\cat-kitten-pixel-art-pixels.jpg'; /* Add a box-shadow with your image as a background */
@@ -283,7 +283,7 @@ a:hover svg{
 
 /* Optionally, you can style the track as well */
 ::-webkit-scrollbar-track {
-  background-color: transparent; /* Set the background color of the track */
+  background-color: #1f1e1e; /* Set the background color of the track */
 }
 
 .vertical-nav{

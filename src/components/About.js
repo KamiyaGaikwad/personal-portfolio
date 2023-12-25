@@ -1,5 +1,6 @@
 import React from "react";
 import cat1 from "../assets/img/cat-kitten-pixel-art-pixels.png";
+import reactBootstrap from "../assets/img/react-bootstrap.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHtml5,faCss3Alt,faReact, faJs, faBootstrap } from '@fortawesome/free-brands-svg-icons';
 
@@ -17,7 +18,8 @@ export const About = () => {
         <h1 className="skill"><div className="icon-img"><FontAwesomeIcon icon={faJs} style={{color: "#f0dc55",}} /></div><h3>JavaScript</h3></h1>
         <h1 className="skill"><div className="icon-img"><FontAwesomeIcon icon={faReact} style={{color: "#08d9ff",}} /></div><h3>React</h3></h1>
         <h1 className="skill"><div className="icon-img"><FontAwesomeIcon icon={faBootstrap} style={{color: "#6F2CF5",}} /></div><h3>Bootstrap</h3></h1>
-        <h1 className="skill"><div className="icon-img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/590px-Node.js_logo.svg.png" alt="" /></div><h3>NodeJs</h3></h1>
+        <h1 className="skill"><div className="icon-img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/590px-Node.js_logo.svg.png" alt="NodeJs" /></div><h3>NodeJs</h3></h1>
+        <h1 className="skill"><div className="icon-img"><img src={reactBootstrap} alt="react-bootstrap" /></div><h3>React Bootstrap</h3></h1>
         </div>
       </div>
     )
