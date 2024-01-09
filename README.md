@@ -51,7 +51,7 @@ The project will automatically open in your default web browser, and any changes
 To stop the development server, you can use `Ctrl + C` in the terminal.
 
 ## Project Structure
-
+```
 ├── public
 │   ├── index.html
 │   └── [other public assets]
@@ -65,6 +65,8 @@ To stop the development server, you can use `Ctrl + C` in the terminal.
 │   ├── assets
 │   │   ├── img
 │   │   │   └── [image files]
+│   │   ├── font
+│   │   │   └── [font files]
 │   │   ├── resume.pdf
 │   │   └── [additional assets]
 │   ├── App.css
@@ -74,7 +76,7 @@ To stop the development server, you can use `Ctrl + C` in the terminal.
 ├── .gitignore
 ├── package.json
 └── README.md
-
+```
 ## Deployment
 
 This portfolio is deployed using [Vercel](https://vercel.com/). Any changes pushed to the `main` branch are automatically deployed.
