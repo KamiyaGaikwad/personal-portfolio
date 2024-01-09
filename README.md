@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+# Kamiya's Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Portfolio Screenshot](./src/assets/img/portfolio.JPG)
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+Welcome to my personal portfolio repository! This repository contains the source code and assets for my online portfolio showcasing my skills, projects, and more.
 
-### `npm start`
+## Live Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Check out the live version of my portfolio [here](https://kamiya-gaikwad-portfolio.vercel.app/).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Table of Contents
 
-### `npm test`
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+- [Project Structure](#project-structure)
+- [Deployment](#deployment)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features
 
-### `npm run build`
+- **Resume:** Downloadable resume.
+- **Skills:** List of skills and technologies.
+- **Projects:** Showcase of projects with descriptions and links.
+- **Blogs:** List of my technical blogs.
+- **Contact:** Ways to get in touch.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Technologies Used
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- HTML5
+- CSS3
+- JavaScript
+- React
+- Bootstrap
+- NodeJs
+- React Bootstrap
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Getting Started
 
-### `npm run eject`
+To run this React project locally, follow these steps:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone the repository: `git clone https://github.com/KamiyaGaikwad/personal-portfolio.git`
+2. Navigate to the project directory: `cd personal-portfolio`
+3. Install dependencies: `npm install`
+4. Start the development server: `npm start`
+5. Open your browser and visit [http://localhost:3000](http://localhost:3000)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The project will automatically open in your default web browser, and any changes you make to the source code will trigger hot-reloading, allowing you to see the changes instantly.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+To stop the development server, you can use `Ctrl + C` in the terminal.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Project Structure
 
-## Learn More
+├── public
+│   ├── index.html
+│   └── [other public assets]
+├── src
+│   ├── components
+│   │   ├── Home.js
+│   │   ├── About.js
+│   │   ├── Projects.js
+│   │   ├── HashnodeBlog.js
+│   │   └── [additional components]
+│   ├── assets
+│   │   ├── img
+│   │   │   └── [image files]
+│   │   ├── resume.pdf
+│   │   └── [additional assets]
+│   ├── App.css
+│   ├── App.js
+│   ├── index.js
+│   └── [other React-specific files]
+├── .gitignore
+├── package.json
+└── README.md
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Deployment
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This portfolio is deployed using [Vercel](https://vercel.com/). Any changes pushed to the `main` branch are automatically deployed.
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
