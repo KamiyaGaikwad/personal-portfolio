@@ -379,6 +379,34 @@ a:hover svg{
   gap:10px;
 }
 
+.home .hmb{
+  font-weight: 700;
+  color: var(--white);
+  border: 1px solid var(--white);
+  padding: 18px;
+  font-size: 18px;
+  position: relative;
+  background-color: transparent;
+  transition: 0.3s ease-in-out;
+  width: max-content;
+  z-index:1;
+  text-decoration: none;
+  align-self: center;
+}
+
+.home .hmb:hover {
+  color: var(--primary);
+  background:var(--white);
+}
+
+.home .buttons{
+  display: flex;
+  width:100%;
+  justify-content: space-around;
+  margin-top:10px;
+  flex-wrap: wrap;
+}
+
 /* About */
 .about .heading,.projects .heading{
   display: flex;
