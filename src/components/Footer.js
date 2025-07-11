@@ -45,7 +45,7 @@ export const Footer = () => {
                 <div className='footer-social'><a href="https://github.com/KamiyaGaikwad/" target="_blank"><FontAwesomeIcon icon={faGithub} className="github-icon"/></a><span>Github</span></div>
                 <div className='footer-social'><a href="https://kamiya.hashnode.dev/" target="_blank"><FontAwesomeIcon icon={faHashnode} className="github-icon"/></a><span>Hashnode</span></div>
                 <div className='footer-social'><a href="https://twitter.com/Kamiya_Gaikwad" target="_blank"><FontAwesomeIcon icon={faXTwitter} className="github-icon" /></a><span>Twitter</span></div>
-                <div className='footer-social'><a href={require("../assets/Kamiya_Resume_FrontEnd_Engineer.pdf")} download="kamiya_gaikwad_frontEnd_engineer_resume.pdf"><FontAwesomeIcon icon={faFile} className="resume-icon" /></a><span>Resume</span></div>
+                <div className='footer-social'><a href={require("../assets/KamiyaG_Resume_2025.pdf")} download="kamiya_gaikwad_frontEnd_engineer_resume.pdf"><FontAwesomeIcon icon={faFile} className="resume-icon" /></a><span>Resume</span></div>
               </div>
           </Col>
 
